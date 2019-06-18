@@ -1,12 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="blog-title">
-  <h1>
-    Bienvenue sur mon blog !
-  </h1>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a class="nav-link" routerLink="posts">Posts</a></li>
+      <li routerLinkActive="active"><a class="nav-link" routerLink="new">Nouveau post</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="div-posts">
-  <h3>Posts</h3>
-  <app-post-list-component [posts]="posts"></app-post-list-component>
+<div class="container">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>
